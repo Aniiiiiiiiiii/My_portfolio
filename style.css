@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+   
+    color: #000000;
+}
+body{
+    background-color: #1a1b1c;
+}
+#logo{
+  color: #61892f;
+  font-size: 25px;
+  font-weight: 800;
+}
+nav .nav-link{
+    color: #61892f;
+    font-size: 18px;
+    font-weight: 300;
+}
+nav .nav-link:hover{
+    color: #fff;
+}
+
+/* ===links of nav and footer=== */
+.SMN_effect-25 a {
+	letter-spacing: 0;
+	transition: 0.35s;
+}
+.SMN_effect-25 a:hover, .SMN_effect-25 a:active {
+	letter-spacing: 5px;
+	transition: 0.35s;
+}
+.SMN_effect-25 a:after {
+	bottom: -10px;
+}
+.SMN_effect-25 a:before {
+	top: -10px;
+}
+.SMN_effect-25 a:after, .SMN_effect-25 a:before {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border: 1px solid rgba(255, 255, 255, 0);
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	transition: all 280ms ease-in-out;
+	width: 0;
+}
+.SMN_effect-25 a:hover:after, .SMN_effect-25 a:hover:before {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-color: #fff;
+	transition: width 350ms ease-in-out;
+	width: 100%;
+}
+.SMN_effect-25 a:hover:before {
+	width: 100%;
+}
+.btn {
+    border: 0px solid #61892f;
+    padding: 8px 15px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s linear 0.3s;
+    font-size: 20px;
+    font-weight: 400;
+    color: #61892f;
+}
+.btn-100::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #61892f;
+    border-bottom: 1px solid #61892f;
+    background: none;
+    position: absolute;
+    inset: 0;
+    transition: all 0.3s linear;
+}
+.btn-100:hover::after {
+    transform: scaleX(0);
+}
+.btn-100:hover {
+    background-color: #61892f;
+    color: #fff;
+}
+/* ===BUTTONS-END=== */
+
+
+/* Hero */
+.heading{
+    font-size:80px;
+    color: #86c232;
+}
+#home_left h4{
+    font-size: 45px;
+}
+#home_left p{
+    line-height: 32px;
+}
+.typed-text{
+  color: #375e97;
+}
+#home_left a button{
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: #f1c21b;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#home_left a button:hover {
+    background-color: #2E2E2E;
+    border:2px solid #f1c21b;
+    color: #f1c21b;
+    box-shadow: 0 0px 0px 0 #f1c21b,5px 10px 5px 2px #f1c21b;
+}
+.mydesc{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.mydesc span{
+    color: #f1c21b;
+}
+.summary{
+  color: #6b6e70;
+  font-size: 20px;
+}
+#summary-span{
+  color: #86c232;
+}
+.hero-img{
+  width: auto;
+  max-height: 500px;
+  border-radius: 20px;
+}
+.cursor {
+    display: inline-block;
+    background-color: #20a192; /* Your preferred color */
+    width: 2px;
+    animation: blink 0.7s steps(1) infinite;
+}
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+
+/* Education and experience */
+
+.card {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #414142a3; /* Background color */
+  color: #18d4ca;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 17px;
+  height: 100%; /* Ensure same height */
+  width: 100%; /* Ensure same width */
+  border: none; /* Remove unwanted border */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.12);
+}
+
+.card-text {
+  height: auto;
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: #86c2320a;
+  content: '';
+  pointer-events: none;
+  border-radius: 20px; /* Ensure same border-radius */
+}
+
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+@media (max-width: 991px) {
+  #exp-card {
+    margin-top: 30px;
+  }
+}
+
+
+
+/* ======About Section======= */
+.about-img{
+    max-height: 400px;
+    /* width: 100%; */
+    border-radius: 20px;
+}
+#about h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#about p{
+ text-align: justify;
+ font-size: 18px;
+}
+#about #about-p{
+    line-height: 32px;
+}
+#skill_logo{
+    width: 60px;
+    height: 60px;
+}
+#skill_logo_spl{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* ======Project Page======== */
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.img-container img {
+  transition: transform 0.3s ease;
+}
+.card {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.card:hover .img-container img {
+  transform: scale(1);
+}
+.card-body {
+  padding: 1rem;
+}
+
+
+
